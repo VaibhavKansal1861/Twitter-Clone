@@ -1,0 +1,255 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Login Page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'> -->
+    <!--<link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>-->
+<!-- </head> -->
+
+
+<!-- <body>
+    <div style="width:1000px; margin:0 auto;">
+        <div style="width:1000px; background-color:blue;height:50px; color:white; font-size:30px;">Create an
+            Account on Twitter
+        </div>
+        <h3><%=errmsg%></h3>
+        <form action="/reg_submit" method="post">
+            <table align="center" width="500" border="1">
+
+                <tr>
+                    <td>Enter First Name: </td>
+                    <td><input type="text" name="fname"/></td>
+                </tr>
+
+                <tr>
+                    <td>Enter Middle Name: </td>
+                    <td><input type="text" name="mname"/></td>
+                </tr>
+
+                <tr>
+                    <td>Enter Last Name: </td>
+                    <td><input type="text" name="lname"/></td>
+                </tr>
+
+                <tr>
+                    <td>Enter email or mobile number: </td>
+                    <td><input type="text" name="email"/></td>
+                </tr>
+
+                <tr>
+                    <td>Password: </td>
+                    <td><input type="password" name="pass"/></td>
+                </tr>
+
+                <tr>
+                    <td>Confirm Password: </td>
+                    <td><input type="password" name="cpass"/></td>
+                </tr>
+
+                <tr>
+                    <td>Date of Birth: </td>
+                    <td><input type="date" name="dob"/></td>
+                </tr>
+
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <label for="male">
+                        <input type="radio" id="male" name="gender" value="male"/>
+                            Male
+                        </label>
+                        <label for="female">
+                        <input type="radio" id="female" name="gender" value="female"/>
+                        Female
+                        </label>
+                        <label for="dnd">
+                        <input type="radio" id="dnd" name="gender" value="dnd"/>
+                            Don't want to discuss
+                        </label>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>Username</td>
+                    <td><input type="text" value="username"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" align="center"><input type="submit" value="Login"/></td>
+                </tr>
+            </table>
+            <div align="center">
+                    <a href="/">Already have an Account.Please click on Login</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Login Page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            background-color: rgb(76, 76, 198);
+            color: white;
+            font-size: 30px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 12px;
+        }
+        
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        table {
+            width: 100%;
+        }
+        
+        td {
+            padding: 10px;
+        }
+        
+        input[type="text"],
+        input[type="password"],
+        input[type="date"],
+        input[type="submit"] {
+            width: calc(100% - 20px);
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        input[type="submit"] {
+            background-color: rgb(26, 107, 199);
+            color: white;
+            cursor: pointer;
+            width:100px;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #0a5f9a;
+        }
+        
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Create an Account on Twitter</div>
+        <h3><%=errmsg%></h3>
+        <form action="/reg_submit" method="post">
+            <table>
+                <tr>
+                    <td>Enter First Name: </td>
+                    <td><input type="text" name="fname"/></td>
+                </tr>
+
+                <tr>
+                    <td>Enter Middle Name: </td>
+                    <td><input type="text" name="mname"/></td>
+                </tr>
+
+                <tr>
+                    <td>Enter Last Name: </td>
+                    <td><input type="text" name="lname"/></td>
+                </tr>
+
+                <tr>
+                    <td>Enter email or mobile number: </td>
+                    <td><input type="text" name="email"/></td>
+                </tr>
+
+                <tr>
+                    <td>Password: </td>
+                    <td><input type="password" name="pass"/></td>
+                </tr>
+
+                <tr>
+                    <td>Confirm Password: </td>
+                    <td><input type="password" name="cpass"/></td>
+                </tr>
+
+                <tr>
+                    <td>Date of Birth: </td>
+                    <td><input type="date" name="dob"/></td>
+                </tr>
+
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <label for="male">
+                        <input type="radio" id="male" name="gender" value="male"/>
+                            Male
+                        </label>
+                        <label for="female">
+                        <input type="radio" id="female" name="gender" value="female"/>
+                        Female
+                        </label>
+                        <label for="dnd">
+                        <input type="radio" id="dnd" name="gender" value="dnd"/>
+                            Don't want to discuss
+                        </label>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>Username</td>
+                    <td><input type="text" value="username"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" align="center"><input type="submit" value="Login"/></td>
+                </tr>
+                <!-- Your form content here -->
+            </table>
+            <div align="center">
+                <a href="/">Already have an Account? Please click on Login</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
